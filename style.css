@@ -1,0 +1,30 @@
+body{
+    background-color:black;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    gap: 3em;
+}
+ul li{
+    list-style-type: none;
+    font: 1em sans-serif;
+    font-size: 50px;
+    display: block;
+    color: #fff;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+ul:hover li{
+    filter: blur(3px);
+}
+ul li:hover{
+    filter: blur(0);
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, rgb(50, 50, 245) 35%, rgb(255, 0, 221) 100%);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
